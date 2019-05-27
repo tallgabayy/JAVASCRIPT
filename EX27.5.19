@@ -2,6 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println(distance(7 , 5));
+        System.out.println(product(10 , 5));
+        System.out.println(quotient(20 , 5));
+
     }
 
     static int distance (int x , int y ) {
@@ -46,6 +49,6 @@ static int quotient (int x , int y) {
 
         return result ;
     }
-    
-    
+
+
 }
