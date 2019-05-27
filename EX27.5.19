@@ -1,0 +1,39 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(distance(5 , 8));
+    }
+
+    static int distance (int x , int y ) {
+        int small = x;
+        int large = y;
+        if (x > y) {
+            small = y;
+            large = x;
+        }
+        int result = 0;
+        while (small + result < large)
+            result++;
+
+        return result;
+    }
+    
+    
+static int product (int x , int y) {
+int small =x;
+int large = y;
+if (x > y) {
+    small = y;
+    large = x;
+}
+    int result = 0;
+for (int i = 0; i < small; i++)
+    result += large;
+
+
+        return result;
+    }
+
+}
