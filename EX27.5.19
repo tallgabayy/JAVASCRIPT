@@ -1,9 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(distance(7 , 5));
-        System.out.println(product(10 , 5));
-        System.out.println(quotient(20 , 5));
+        System.out.println(distance(7 , 3));
+        System.out.println(product(7 , 3));
+        System.out.println(quotient(7 , 3));
+        System.out.println(remainder(7 , 3));
+        System.out.println(power(7 , 3));
+
 
     }
 
@@ -49,6 +52,33 @@ static int quotient (int x , int y) {
 
         return result ;
     }
+static int remainder (int x , int y) {
+ if (y == 0)
+        return -1 ;
+ return distance (x , product (quotient (x,y) , y )) ;
+
+   }
+   static int power (int x  , int y ) {
+        if (x == 0){
+            if (y == 0)
+                return -1;
+            return 0;
+        }
+        if (y == 0 || x == 1)
+        return 1;
+
+        int result = 1;
+        for (int i = 0; i < y; i++)
+            result *= x;
+
+
+
+        return result;
+
+
+
+   }
+
 
 
 }
